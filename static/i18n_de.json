@@ -1,0 +1,55 @@
+{
+    "locale": "de",
+    "title": "Timer &middot; Stuperman",
+    "description": "Einfacher Timer für den Beamer während Klausuren",
+    "time_format": "HH:mm",
+    "imprint": "Dieser Timer ist ein kleines Nebenprojekt vom <a href='https://stuperman.org'>Stuperman</a> und wird als solches von <a href='https://haim.it'>Mario Haim</a> entwickelt. Die Uhr stammt von <a href='http://www.3quarks.com/en/SVGClock/'>Rüdiger Appel</a>, das Icon von <a href='http://www.freepik.com'>Freepik</a> über <a href='https://www.flaticon.com/'>www.flaticon.com</a>. Beides ist als <a href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</a> lizenziert.",
+    
+    "frontend": {
+        "intro": "Dieser Timer hilft SchülerInnen und Studierenden, während Klausuren den Überblick zu bewahren. Der Timer zeigt die aktuelle und - auf Wunsch - die bereits vergangene sowie die noch verbleibende Zeit während der Klausur an. Das Ganze kann optional mit Farben untermalt und mit einem Kommentar (z.B. wie die Klausurabgabe erfolgen soll) versehen werden. Und das alles lokal und nicht kommerziell - also kein Speichern von Daten, keine Werbung, keine Kosten.",
+        "new_session": "Neuen Timer starten",
+        "nDurationMin": "Zeit in Minuten",
+        "off": "Nein, bitte nicht",
+        "on": "Ja, unbedingt",
+        "bShowRemaining": "Zeige die verbleibende Zeit",
+        "bShowPassed": "Zeige bereits abgelaufene Zeit",
+        "bShowStatusBar": "Zeige einen Ladebalken für die abgelaufene Zeit",
+        "bEmptyStatusBarInsteadOfFillUp": "Der Ladebalken soll verbleibende (statt abgelaufener) Zeit anzeigen",
+        "sProgressBarColor": "Farben des Ladebalkens",
+        "progressbar-primary": "dunkelblau",
+        "progressbar-info": "neutral hellblau",
+        "progressbar-success": "grün",
+        "progressbar-warning": "gelb",
+        "progressbar-danger": "rot",
+        "show_more_config": "Ich will noch mehr ändern",
+        "sHeadline": "Lege eine Überschrift fest",
+        "sNotes": "Platz für Anmerkungen",
+        "cColor": "Schriftfarbe",
+        "cBackgroundColor": "Hintergrundfarbe",
+        "recolor": "Ändere die Farben je nach verbleibender Zeit",
+        "recolor_minutes": "Verbleibende Minuten",
+        "recolor_color": "Neue Schriftfarbe",
+        "recolor_backgroundcolor": "Neue Hintergrundfarbe",
+        "recolor_add": "Farbänderung hinzufügen",
+        "recolor_config-pre": "die Farben ändern sich ",
+        "recolor_config-post": " Minuten vor Ablauf der Zeit",
+        "recolor_remove": "Die Farbänderung entfernen",
+        "start": "Los geht's!"
+    },
+    
+    "timer": {
+        "options": "Einstellungen",
+        "add_10": "10 Minuten hinzufügen",
+        "subtract_10": "10 Minuten abziehen",
+        "edit_headline": "Überschrift bearbeiten",
+        "edit_notes": "Anmerkungen bearbeiten",
+        "restart": "Diesen Timer neu starten",
+        "abort": "Abbrechen (und einen neuen Timer starten)",
+        "clock": "aktuelle Uhrzeit"
+    },
+    
+    "finish": {
+        "headline": "Ende der Bearbeitungszeit",
+        "back": "Neuen Timer starten"
+    }
+}

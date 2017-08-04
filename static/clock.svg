@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+     clock.svg
+
+     Copyright (c) 2012 Rüdiger Appel
+     Licensed under the creative common license.
+     
+     Date:    2012-03-23
+     Version: 1.0
+     Email:   ludi(at)me(dot)com
+     Home:    http://www.3quarks.com/en/SVGClock/
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     version="1.1"
+     baseProfile="full"
+     width="100%"
+     height="100%"
+     viewBox="0 0 200 200">
+
+  <defs>
+    <!-- quarter strokes (points) -->
+    <symbol id="quarterStrokesPoints">
+      <use xlink:href="#threeHourStrokePoints"/>
+      <use xlink:href="#hourStrokePoints" transform="rotate(30, 100, 100)"/>
+      <use xlink:href="#hourStrokePoints" transform="rotate(60, 100, 100)"/>
+    </symbol>
+
+    <!-- three hour stroke (DIN 41091.1) -->
+    <symbol id="threeHourStrokeDIN41091.1">
+      <rect x="95.8" y="0" width="8.4" height="30"/>
+    </symbol>
+
+    <!-- hour stroke (DIN 41091.1) -->
+    <symbol id="hourStrokeDIN41091.1">
+      <rect x="95.8" y="0" width="8.4" height="24"/>
+    </symbol>
+
+    <!-- minute stroke (DIN 41091.1) -->
+    <symbol id="minuteStrokeDIN41091.1">
+      <rect x="98.2" y="0" width="3.6" height="8"/>
+    </symbol>
+
+    <!-- quarter strokes (DIN 41091.1) -->
+    <symbol id="quarterStrokesDIN41091.1">
+      <use xlink:href="#threeHourStrokeDIN41091.1"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate( 6, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(12, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(18, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(24, 100, 100)"/>
+      <use xlink:href="#hourStrokeDIN41091.1"   transform="rotate(30, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(36, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(42, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(48, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(54, 100, 100)"/>
+      <use xlink:href="#hourStrokeDIN41091.1"   transform="rotate(60, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(66, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(72, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(78, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.1" transform="rotate(84, 100, 100)"/>
+    </symbol>
+
+    <!-- hour stroke (DIN 41091.4) -->
+    <symbol id="hourStrokeDIN41091.4" visibility="hidden">
+      <rect x="97" y="0" width="6" height="7"/>
+    </symbol>
+
+    <!-- minute stroke (DIN 41091.4) -->
+    <symbol id="minuteStrokeDIN41091.4" visibility="hidden">
+      <rect x="98.75" y="0" width="2.5" height="7"/>
+    </symbol>
+
+    <!-- five minutes strokes (DIN 41091.4) -->
+    <symbol id="fiveMinutesStrokesDIN41091.4" visibility="hidden">
+      <use xlink:href="#hourStrokeDIN41091.4"/>
+      <use xlink:href="#minuteStrokeDIN41091.4" transform="rotate( 6, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.4" transform="rotate(12, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.4" transform="rotate(18, 100, 100)"/>
+      <use xlink:href="#minuteStrokeDIN41091.4" transform="rotate(24, 100, 100)"/>
+    </symbol>
+
+    <!-- quarter strokes (DIN 41091.4) -->
+    <symbol id="quarterStrokesDIN41091.4" visibility="hidden">
+      <use xlink:href="#fiveMinutesStrokesDIN41091.4"/>
+      <use xlink:href="#fiveMinutesStrokesDIN41091.4" transform="rotate(30, 100, 100)"/>
+      <use xlink:href="#fiveMinutesStrokesDIN41091.4" transform="rotate(60, 100, 100)"/>
+    </symbol>
+  </defs>
+
+  <!-- clock -->
+  <g id="clock" clip-path="url(#dialCircle)">
+    <!-- background -->
+    <g id="background" style="fill:none">
+      <circle cx="100" cy="100" r="100" style="stroke:none"/>
+    </g>
+
+    <!-- dial -->
+    <g id="dial" style="fill:#333">
+      <g id="dialDIN41091.1">
+        <use xlink:href="#quarterStrokesDIN41091.1" style="stroke:none"/>
+        <use xlink:href="#quarterStrokesDIN41091.1" style="stroke:none" transform="rotate( 90, 100, 100)"/>
+        <use xlink:href="#quarterStrokesDIN41091.1" style="stroke:none" transform="rotate(180, 100, 100)"/>
+        <use xlink:href="#quarterStrokesDIN41091.1" style="stroke:none" transform="rotate(270, 100, 100)"/>
+      </g>
+      <g id="dialDIN41091.4" visibility="hidden">
+        <use xlink:href="#quarterStrokesDIN41091.4" style="stroke:none"/>
+        <use xlink:href="#quarterStrokesDIN41091.4" style="stroke:none" transform="rotate( 90, 100, 100)"/>
+        <use xlink:href="#quarterStrokesDIN41091.4" style="stroke:none" transform="rotate(180, 100, 100)"/>
+        <use xlink:href="#quarterStrokesDIN41091.4" style="stroke:none" transform="rotate(270, 100, 100)"/>
+        <g text-anchor="middle" letter-spacing="-2" font-family="sans-serif" font-size="24px" style="stroke:none">
+          <text x="100" y="30">12</text>
+          <text x="143" y="41">1</text>
+          <text x="171" y="70">2</text>
+          <text x="182" y="109">3</text>
+          <text x="171" y="147">4</text>
+          <text x="142" y="176">5</text>
+          <text x="100" y="188">6</text>
+          <text x="60" y="176">7</text>
+          <text x="30" y="147">8</text>
+          <text x="18" y="109">9</text>
+          <text x="34" y="70">10</text>
+          <text x="61" y="41">11</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- hour hand -->
+    <g id="hourHand" style="fill:#222">
+      <g id="hourHandDIN41092.3">
+        <polygon points="94,46 100,40 106,46 106,118 94,118" style="stroke:none"/>
+      </g>
+    </g>
+
+    <!-- minute hand -->
+    <g id="minuteHand" style="fill:#222">
+      <g id="minuteHandDIN41092.3">
+        <polygon points="95.5,11.5 100,7 104.5,11.5 104.5,122 95.5,122" style="stroke:none"/>
+      </g>
+    </g>
+
+    <!-- second hand -->
+    <g id="secondHand" style="fill:#ad1a14; stroke:#ad1a14">
+      <g id="secondHandDIN41071.1">
+        <polygon points="99.4,8 100.6,8 102.8,123 97.2,123" style="stroke:none"/>
+      </g>
+    </g>
+  </g>
+</svg>
+ 

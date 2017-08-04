@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="{{locale}}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="author" content="Mario Haim <haim@ifkw.lmu.de>" />
+        <meta name="application-name" content="{{title}}" />
+        <meta name="description" content="{{description}}" />
+        <meta name="robots" content="noindex, nofollow" />
+
+        <title>{{title}}</title>
+        
+        <link rel="icon" href="/testtimer.ico" sizes="32x32" type="image/vnd.microsoft.icon" />
+        <link rel="icon" href="/testtimer.png" sizes="512x512" type="image/png" />
+        <link rel="icon" href="/testtimer.svg" sizes="any" type="image/svg+xml" />
+        <link href="/testtimer.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="frontend">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p class="m-t-1">
+                            <img src="/testtimer.svg" class="col-xs-6 col-xs-offset-5" alt="{{title}}" />
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="nav nav-pills pull-right m-t-1">
+                            <li role="presentation"><a href="/de/">de</a></li>
+                            <li role="presentation"><a href="/en/">en</a></li>
+                        </ul>
+                        <p class="m-t-6">{{frontend.intro}}</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="frontend">
+            <div class="container">
+                <h1 class="text-center">{{frontend.new_session}}</h1>
+                <form class="form-horizontal">
+                    <div class="content config_main">
+                        <div class="form-group">
+                            <label for="nDurationMin" class="col-sm-5 control-label">{{frontend.nDurationMin}}</label>
+                            <div class="col-sm-5">
+                                <input type="number" id="nDurationMin" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bShowRemaining" class="col-sm-5 control-label">{{frontend.bShowRemaining}}</label>
+                            <div class="col-sm-5">
+                                <select id="bShowRemaining" class="form-control">
+                                    <option value="on">{{frontend.on}}</option>
+                                    <option value="off">{{frontend.off}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bShowPassed" class="col-sm-5 control-label">{{frontend.bShowPassed}}</label>
+                            <div class="col-sm-5">
+                                <select id="bShowPassed" class="form-control">
+                                    <option value="on">{{frontend.on}}</option>
+                                    <option value="off">{{frontend.off}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bShowStatusBar" class="col-sm-5 control-label">{{frontend.bShowStatusBar}}</label>
+                            <div class="col-sm-5">
+                                <select id="bShowStatusBar" class="form-control">
+                                    <option value="on">{{frontend.on}}</option>
+                                    <option value="off">{{frontend.off}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="config_sep">
+                        <hr />
+                        <div class="text-center">
+                            <small><a href="#config_sub">{{frontend.show_more_config}}</a></small>
+                        </div>
+                    </div>
+                    <div class="content config_sub">
+                        <div class="form-group">
+                            <label for="bEmptyStatusBarInsteadOfFillUp" class="col-sm-5 control-label">{{frontend.bEmptyStatusBarInsteadOfFillUp}}</label>
+                            <div class="col-sm-5">
+                                <select id="bEmptyStatusBarInsteadOfFillUp" class="form-control">
+                                    <option value="off">{{frontend.off}}</option>
+                                    <option value="on">{{frontend.on}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sProgressBarColor" class="col-sm-5 control-label">{{frontend.sProgressBarColor}}</label>
+                            <div class="col-sm-5">
+                                <select id="sProgressBarColor" class="form-control">
+                                    <option value="" class="bg-primary">{{frontend.progressbar-primary}}</option>
+                                    <option value="progress-bar-info" class="bg-info">{{frontend.progressbar-info}}</option>
+                                    <option value="progress-bar-success" class="bg-success">{{frontend.progressbar-success}}</option>
+                                    <option value="progress-bar-warning" class="bg-warning">{{frontend.progressbar-warning}}</option>
+                                    <option value="progress-bar-danger" class="bg-danger">{{frontend.progressbar-danger}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sHeadline" class="col-sm-5 control-label">{{frontend.sHeadline}}</label>
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <input type="checkbox" id="bShowHeadline" value="1" />
+                                    </span>
+                                    <input type="text" id="sHeadline" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sNotes" class="col-sm-5 control-label">{{frontend.sNotes}}</label>
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <input type="checkbox" id="bShowNotes" value="1" />
+                                    </span>
+                                    <textarea id="sNotes" class="form-control" rows="6"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cColor" class="col-sm-5 control-label">{{frontend.cColor}}</label>
+                            <div class="col-sm-5">
+                                <input type="color" id="cColor" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cBackgroundColor" class="col-sm-5 control-label">{{frontend.cBackgroundColor}}</label>
+                            <div class="col-sm-5">
+                                <input type="color" id="cBackgroundColor" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="recolor_nMinutes" class="col-sm-5 control-label">{{frontend.recolor}}</label>
+                            <div class="col-sm-5">
+                                <div class="well">
+                                    <div class="form-group">
+                                        <label for="recolor_nMinutes" class="control-label col-sm-5">{{frontend.recolor_minutes}}</label>
+                                        <div class="col-sm-7">
+                                            <input type="number" id="recolor_nMinutes" class="form-control input-sm" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recolor_cColor" class="control-label col-sm-5">{{frontend.recolor_color}}</label>
+                                        <div class="col-sm-7">
+                                            <input type="color" id="recolor_cColor" class="form-control input-sm" value="#FFFFFF" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recolor_cBackgroundColor" class="control-label col-sm-5">{{frontend.recolor_backgroundcolor}}</label>
+                                        <div class="col-sm-7">
+                                            <input type="color" id="recolor_cBackgroundColor" class="form-control input-sm" value="#000000" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-offset-5 col-sm-7">
+                                            <a href="#add" class="btn btn-primary btn-xs">{{frontend.recolor_add}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed table-hover">
+                                        <tbody class="recolor"></tbody>
+                                        <tfoot class="hide">
+                                            <tr>
+                                                <td>
+                                                    {{frontend.recolor_config-pre}}{{_min}}{{frontend.recolor_config-post}}
+                                                    <a href="#remove" class="btn btn-danger btn-xs pull-right" title="{{frontend.recolor_remove}}">&times;</a>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content config_main m-t-2 m-b-4">
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-success" value="{{frontend.start}}" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <footer class="frontend">
+            <div class="container">
+                <p class="text-center">{{imprint}}</p>
+            </div>
+        </footer>
+        
+        <header class="testtimer">
+            <div class="container-fluid">
+                <div class="row m-t-1">
+                    <ul class="nav nav-pills pull-right">
+                        <li role="presentation"><a href="/de/">de</a></li>
+                        <li role="presentation"><a href="/en/">en</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+            
+        <div class="testtimer" data-locale="{{locale}}" data-timeformat="{{time_format}}">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content testtimer_current">
+                            <object class="clock_analog" data="/clock.svg" type="image/svg+xml" alt="{{timer.clock}}"></object>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text m-b-2">
+                            <h1 class="content testtimer_headline"></h1>
+                            <p class="content testtimer_notes"></p>
+                        </div>
+                        <div class="time m-b-2 clearfix">
+                            <div class="content testtimer_remaining pull-right"></div>
+                            <div class="content testtimer_passed"></div>
+                        </div>
+                        <div class="percent">
+                            <div class="content testtimer_percent_passed">
+                                <div class="progress">
+                                    <div class="progress-bar testtimer_percent_progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="sr-only testtimer_percent_value"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content testtimer_percent_remaining">
+                                <div class="progress">
+                                    <div class="progress-bar testtimer_percent_progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        <span class="sr-only testtimer_percent_value"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="testtimer">
+            <div class="container-fluid">
+                <div class="config">             
+                    <div class="btn-group dropup pull-right">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{timer.options}} 
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#adjust" data-minutes="10">{{timer.add_10}}</a></li>
+                            <li><a href="#adjust" data-minutes="-10">{{timer.subtract_10}}</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#edit" data-field="sHeadline">{{timer.edit_headline}}</a></li>
+                            <li><a href="#edit" data-field="sNotes">{{timer.edit_notes}}</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#restart">{{timer.restart}}</a></li>
+                            <li><a href="#abort">{{timer.abort}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <div class="finish m-t-3 m-b-2">
+            <div class="container-fluid">
+                <p class="lead text-center">{{finish.headline}}</p>
+            </div>
+        </div>
+        
+        <footer class="finish">
+            <div class="container-fluid">
+                <a href="#back" class="btn btn-default">{{finish.back}}</a>
+            </div>
+        </footer>
+        
+        <script src="/testtimer.js"></script>
+    </body>
+</html>

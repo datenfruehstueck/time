@@ -1,0 +1,55 @@
+{
+    "locale": "en",
+    "title": "Timer &middot; Stuperman",
+    "description": "Easy-to-use timer for display on a projector during an exam",
+    "time_format": "hh:mm a",
+    "imprint": "This timer is a side project from <a href='https://stuperman.org'>Stuperman</a> and has been created and maintained by <a href='https://haim.it'>Mario Haim</a>. Clock by <a href='http://www.3quarks.com/en/SVGClock/'>Rüdiger Appel</a>, icon by <a href='http://www.freepik.com'>Freepik</a> from <a href='https://www.flaticon.com/'>www.flaticon.com</a>, both licensed by <a href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</a>.",
+    
+    "frontend": {
+        "intro": "This timer assists pupils and students to keep track of time during exams. As such, this timer depicts the current time as well as both the passed and remaining time. Moreover, you could vary coloring and include remarks (e.g., what to do with the exam after finishing it). Oh, and everything is local and noncommercial. That is, no data ist stored, no advertising, no pricing, no costs.",
+        "new_session": "Start a New Session",
+        "nDurationMin": "Time in minutes",
+        "off": "No, don't do it",
+        "on": "Yes, I want that",
+        "bShowRemaining": "Display remaining time",
+        "bShowPassed": "Display passed time",
+        "bShowStatusBar": "Display a status bar",
+        "bEmptyStatusBarInsteadOfFillUp": "The status bar should depict remaining rather than passed time",
+        "sProgressBarColor": "The status bar's color",
+        "progressbar-primary": "dark blue",
+        "progressbar-info": "a neutral light blue",
+        "progressbar-success": "green",
+        "progressbar-warning": "yellow",
+        "progressbar-danger": "red",
+        "show_more_config": "Show more options",
+        "sHeadline": "Specify a headline",
+        "sNotes": "Provide some remarks",
+        "cColor": "Font color",
+        "cBackgroundColor": "Background color",
+        "recolor": "Change colors depending on remaining time",
+        "recolor_minutes": "Remaining minutes",
+        "recolor_color": "New font color",
+        "recolor_backgroundcolor": "New background color",
+        "recolor_add": "Add color configuration",
+        "recolor_config-pre": "colors change ",
+        "recolor_config-post": " minutes before end time",
+        "recolor_remove": "Remove this color configuration line",
+        "start": "Let's go!"
+    },
+    
+    "timer": {
+        "options": "Options",
+        "add_10": "Add 10 minutes",
+        "subtract_10": "Subtract 10 minutes",
+        "edit_headline": "Edit headline",
+        "edit_notes": "Edit notes",
+        "restart": "Restart the timer",
+        "abort": "Abort (and start new session)",
+        "clock": "current time"
+    },
+    
+    "finish": {
+        "headline": "Time is over",
+        "back": "Start new session"
+    }
+}

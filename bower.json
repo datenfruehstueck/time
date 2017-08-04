@@ -1,0 +1,25 @@
+{
+  "name": "examtimer",
+  "authors": [
+    "Mario Haim <haim@ifkw.lmu.de>"
+  ],
+  "description": "JavaScript-based easy-to-use timer for display at (school/university) exams",
+  "license": "MIT",
+  "homepage": "https://github.com/MarHai/examtimer",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.9.1",
+    "moment": "^2.13.0",
+    "bootstrap": "^3.3.6"
+  },
+  "resolutions": {
+    "jquery": "^1.9.1"
+  }
+}
