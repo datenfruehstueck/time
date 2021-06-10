@@ -21,8 +21,8 @@ var Frontend = {
     cColor: '#000000',
     cBackgroundColor: '#FFFFFF',
     oRecolorOnRemainingMinutes: {
-        15: { cColor: '#000000', cBackgroundColor: '#BED053' },
-        5: { cColor: '#000000', cBackgroundColor: '#C34558' }
+        15: { cColor: '#000000', cBackgroundColor: '#dae299' },
+        5: { cColor: '#000000', cBackgroundColor: '#ffdbdb' }
     },
     
     oCurrentTimer: null,
@@ -275,8 +275,8 @@ var Frontend = {
 
             //draw the current analog clock if wanted
             if(Frontend.bShowCurrent && Frontend.bClockTypeAnalog) {
-                var nOuterWidth = parseInt($('.testtimer .content.testtimer_current').width()),
-                    nMaxHeight = parseInt($(window).height()) - $('header.testtimer').outerHeight() - $('footer.testtimer').outerHeight();
+                var nOuterWidth = parseInt($('.testtimer .content.testtimer_current').width()) * 0.8,
+                    nMaxHeight = parseInt($(window).height()) * 0.8;
                 if(nOuterWidth > nMaxHeight) {
                     $('#testtimer_analog').width(nMaxHeight);
                 } else {

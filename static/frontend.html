@@ -12,9 +12,8 @@
 
         <title>{{title}}</title>
         
-        <link rel="icon" href="/testtimer.ico" sizes="32x32" type="image/vnd.microsoft.icon" />
-        <link rel="icon" href="/testtimer.png" sizes="512x512" type="image/png" />
-        <link rel="icon" href="/testtimer.svg" sizes="any" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" type="image/vnd.microsoft.icon" />
+        <link rel="icon" href="/coffee.png" sizes="512x512" type="image/png" />
         <link href="/testtimer.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
@@ -23,7 +22,7 @@
                 <div class="row">
                     <div class="col-sm-5">
                         <p class="m-t-1">
-                            <img src="/testtimer.svg" class="col-xs-6 col-xs-offset-5" alt="{{title}}" />
+                            <img src="/coffee.png" class="col-xs-6 col-xs-offset-5" alt="{{title}}" />
                         </p>
                     </div>
                     <div class="col-sm-6">
@@ -199,11 +198,29 @@
         
         <header class="testtimer">
             <div class="container-fluid">
-                <div class="row m-t-1">
-                    <ul class="nav nav-pills pull-right">
-                        <li role="presentation"><a href="/de/">de</a></li>
-                        <li role="presentation"><a href="/en/">en</a></li>
-                    </ul>
+                <div class="m-t-1">
+                    <div class="btn-toolbar config pull-right" role="toolbar">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <a href="/de/" class="btn btn-default">de</a>
+                            <a href="/en/" class="btn btn-default">en</a>
+                        </div>
+                        <div class="btn-group dropdown">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{timer.options}}
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#adjust" data-minutes="10">{{timer.add_10}}</a></li>
+                                <li><a href="#adjust" data-minutes="-10">{{timer.subtract_10}}</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#edit" data-field="sHeadline">{{timer.edit_headline}}</a></li>
+                                <li><a href="#edit" data-field="sNotes">{{timer.edit_notes}}</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#restart">{{timer.restart}}</a></li>
+                                <li><a href="#abort">{{timer.abort}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -245,31 +262,7 @@
                 </div>
             </div>
         </div>
-        
-        <footer class="testtimer">
-            <div class="container-fluid">
-                <div class="config">             
-                    <div class="btn-group dropup pull-right">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{timer.options}} 
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#adjust" data-minutes="10">{{timer.add_10}}</a></li>
-                            <li><a href="#adjust" data-minutes="-10">{{timer.subtract_10}}</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#edit" data-field="sHeadline">{{timer.edit_headline}}</a></li>
-                            <li><a href="#edit" data-field="sNotes">{{timer.edit_notes}}</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#restart">{{timer.restart}}</a></li>
-                            <li><a href="#abort">{{timer.abort}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-        
+
         <div class="finish m-t-3 m-b-2">
             <div class="container-fluid">
                 <p class="lead text-center">{{finish.headline}}</p>
@@ -277,7 +270,7 @@
         </div>
         
         <footer class="finish">
-            <div class="container-fluid">
+            <div class="container-fluid text-center">
                 <a href="#back" class="btn btn-default">{{finish.back}}</a>
             </div>
         </footer>

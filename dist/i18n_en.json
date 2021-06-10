@@ -1,10 +1,10 @@
 {
     "locale": "en",
-    "title": "Timer &middot; Stuperman",
+    "title": "Timer &middot; Datenfrühstück",
     "description": "Easy-to-use timer for display on a projector during an exam",
     "time_format": "hh:mm a",
-    "imprint": "This timer is a side project from <a href='https://stuperman.org'>Stuperman</a> and has been created and maintained by <a href='https://haim.it'>Mario Haim</a>. Clock by <a href='http://www.3quarks.com/en/SVGClock/'>Rüdiger Appel</a>, icon by <a href='http://www.freepik.com'>Freepik</a> from <a href='https://www.flaticon.com/'>www.flaticon.com</a>, both licensed by <a href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</a>.",
-    
+    "imprint": "This timer has been created and maintained by <a href='https://haim.it'>Mario Haim</a>. Clock by <a href='http://www.3quarks.com/en/SVGClock/'>Rüdiger Appel</a> licensed by <a href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</a>.",
+
     "frontend": {
         "intro": "This timer assists pupils and students to keep track of time during exams. As such, this timer depicts the current time as well as both the passed and remaining time. Moreover, you could vary coloring and include remarks (e.g., what to do with the exam after finishing it). Oh, and everything is local and noncommercial. That is, no data ist stored, no advertising, no pricing, no costs.",
         "new_session": "Start a New Session",
@@ -36,7 +36,7 @@
         "recolor_remove": "Remove this color configuration line",
         "start": "Let's go!"
     },
-    
+
     "timer": {
         "options": "Options",
         "add_10": "Add 10 minutes",
@@ -47,7 +47,7 @@
         "abort": "Abort (and start new session)",
         "clock": "current time"
     },
-    
+
     "finish": {
         "headline": "Time is over",
         "back": "Start new session"

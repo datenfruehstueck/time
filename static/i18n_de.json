@@ -1,12 +1,12 @@
 {
     "locale": "de",
-    "title": "Timer &middot; Stuperman",
+    "title": "Timer &middot; Datenfrühstück",
     "description": "Einfacher Timer für den Beamer während Klausuren",
     "time_format": "HH:mm",
-    "imprint": "Dieser Timer ist ein kleines Nebenprojekt vom <a href='https://stuperman.org'>Stuperman</a> und wird als solches von <a href='https://haim.it'>Mario Haim</a> entwickelt. Die Uhr stammt von <a href='http://www.3quarks.com/en/SVGClock/'>Rüdiger Appel</a>, das Icon von <a href='http://www.freepik.com'>Freepik</a> über <a href='https://www.flaticon.com/'>www.flaticon.com</a>. Beides ist als <a href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</a> lizenziert.",
-    
+    "imprint": "Dieser Timer wird von <a href='https://haim.it'>Mario Haim</a> entwickelt. Die Uhr stammt von <a href='http://www.3quarks.com/en/SVGClock/'>Rüdiger Appel</a> lizenziert als <a href='http://creativecommons.org/licenses/by/3.0/'>CC 3.0 BY</a>.",
+
     "frontend": {
-        "intro": "Dieser Timer hilft SchülerInnen und Studierenden, während Klausuren den Überblick zu bewahren. Der Timer zeigt die aktuelle und - auf Wunsch - die bereits vergangene sowie die noch verbleibende Zeit während der Klausur an. Das Ganze kann optional mit Farben untermalt und mit einem Kommentar (z.B. wie die Klausurabgabe erfolgen soll) versehen werden. Und das alles lokal und nicht kommerziell - also kein Speichern von Daten, keine Werbung, keine Kosten.",
+        "intro": "Dieser Timer hilft Schüler:innen und Studierenden, während Klausuren den Überblick zu bewahren. Der Timer zeigt die aktuelle und - auf Wunsch - die bereits vergangene sowie die noch verbleibende Zeit während der Klausur an. Das Ganze kann optional mit Farben untermalt und mit einem Kommentar (z.B. wie die Klausurabgabe erfolgen soll) versehen werden. Und das alles lokal und nicht kommerziell - also kein Speichern von Daten, keine Werbung, keine Kosten.",
         "new_session": "Neuen Timer starten",
         "nDurationMin": "Zeit in Minuten",
         "off": "Nein, bitte nicht",
@@ -36,7 +36,7 @@
         "recolor_remove": "Die Farbänderung entfernen",
         "start": "Los geht's!"
     },
-    
+
     "timer": {
         "options": "Einstellungen",
         "add_10": "10 Minuten hinzufügen",
@@ -47,7 +47,7 @@
         "abort": "Abbrechen (und einen neuen Timer starten)",
         "clock": "aktuelle Uhrzeit"
     },
-    
+
     "finish": {
         "headline": "Ende der Bearbeitungszeit",
         "back": "Neuen Timer starten"
